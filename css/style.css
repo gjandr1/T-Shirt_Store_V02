@@ -1,5 +1,12 @@
+body{
+    background-color: #e8caa4;
+    color: #351330;
+}
 header{
-    background-color: lightgray;
+    background-color: rgba(211,211,211,0.5);
+}
+header .nav-link{
+    color: #424254;
 }
 .logo-size{
     width: 150px;
@@ -7,11 +14,25 @@ header{
 .Most-Recent-Img{
     width: 100%;
 }
+.Image_width{
+    width: 100%;
+}
 .tshirt1{
     background: none;
     margin-bottom: 20px;
+
+}
+.shadow{
+    background-color: #64908A;
 }
 .Artiste{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.btn-danger{
+    background-color: #CC2A41;
+}
+
+.btn-primary{
+    background-color: #424254;
 }

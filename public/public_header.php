@@ -3,7 +3,7 @@
     <header>           
         <nav class="navbar navbar-expand-sm ">
             <!-- Brand/logo -->
-            <a class="navbar-brand" href="main.php">
+            <a class="navbar-brand" href="public_main.php">
                 <img src="../image/logo.png" alt="logo" class="logo-size" ">
             </a>
             

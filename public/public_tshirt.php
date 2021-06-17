@@ -6,15 +6,15 @@
     <div class="container">
         <div class="row">
             <?php
-            $sql = "SELECT * FROM t_shirt WHERE ID = ".$_GET['idtshirt'];
+            $sql = "SELECT T.ID, T.Nom AS Nom_tshirt, A.Nom AS Nom_artiste, A.Prenom AS Prenom_artiste, T.Prix, T.image FROM t_shirt AS T INNER JOIN artiste AS A ON T.ID_artiste=A.ID WHERE T.ID=".$_GET['idtshirt'];
             if ($result = $mysqli->query($sql)){
                 if ($produit = $result->fetch_array()){
                     echo '<div class="col-6">';
-                        echo '<img src="../image/'.$produit['image'].'.jpeg" alt="">';
+                        echo '<img src="../image/'.$produit['image'].'" alt="">';
                     echo '</div>';
                     echo '<div class="col-6">';
-                        echo '<p>Nom  : '.$produit['Nom'].'</p>';
-                        echo '<p>Artiste : '.$produit['ID_artiste'].'</p>';
+                        echo '<p>Nom  : '.$produit['Nom_tshirt'].'</p>';
+                        echo '<p>Artiste : '.$produit['Nom_artiste'].' '.$produit['Prenom_artiste'].'</p>';
                         echo '<div class="dropdown">';
                             echo '<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Taille';
                             echo '<span class="caret"></span></button>';
@@ -26,7 +26,7 @@
                             echo '</ul>';
                         echo '</div>';
                         echo '<p>Prix : '.$produit['Prix'].'€</p>';
-                        echo '<button>Ajouter</button>';
+                        echo '<button class="btn btn-success">Ajouter</button>';
                     echo '</div>';
                 }
             }
@@ -35,4 +35,4 @@
     </div>
 </section>
 
-<?php require 'footer.php';?>
+<?php require 'public_footer.php';?>

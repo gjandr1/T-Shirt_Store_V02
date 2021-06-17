@@ -25,10 +25,10 @@
             </div>
             <?php
                 if (isset($_GET['idcategorie'])){
-                    $sql = "SELECT * FROM t_shirt WHERE ID_categorie = ".$_GET['idcategorie'];
+                    $sql = "SELECT T.ID, T.Nom AS Nom_tshirt, A.Nom AS Nom_artiste, A.Prenom AS Prenom_artiste, T.Prix, T.image FROM t_shirt AS T INNER JOIN artiste AS A ON T.ID_artiste=A.ID  WHERE Date_suppression IS NULL AND ID_categorie = ".$_GET['idcategorie'];
                 }
                 else{
-                    $sql = "SELECT * FROM t_shirt ";
+                    $sql = "SELECT T.ID, T.Nom AS Nom_tshirt, A.Nom AS Nom_artiste, A.Prenom AS Prenom_artiste, T.Prix, T.image FROM t_shirt AS T INNER JOIN artiste AS A ON T.ID_artiste=A.ID  WHERE Date_suppression IS NULL ";
                 }
 
                 if ($result = $mysqli->query($sql)){
@@ -36,13 +36,13 @@
                         echo " <div class='col-4 tshirt1'>";
                             echo " <div class='shadow'>";
                                 echo " <div>";
-                                    echo " <a href='public_tshirt.php?idtshirt=".$produit["ID"]."'><img class='Most-Recent-Img' src='../image/".$produit["image"].".jpeg' alt=''></a>";
+                                    echo " <a href='public_tshirt.php?idtshirt=".$produit["ID"]."'><img class='Most-Recent-Img' src='../image/".$produit["image"]."' alt=''></a>";
                                 echo " </div>";
                                 echo "<div>";
-                                    echo " <p>".$produit["Nom"]."</p>";
-                                    echo " <p>Nom du créateur</p>";
-                                    echo " <p>".$produit["Prix"]."€</p>";
-                                    echo " <button>Ajouter</button>";
+                                    echo " <p>Nom : ".$produit["Nom_tshirt"]."</p>";
+                                    echo " <p>Artiste : ".$produit["Nom_artiste"]." ".$produit["Prenom_artiste"]."</p>";
+                                    echo " <p>Prix : ".$produit["Prix"]."€</p>";
+                                    echo " <button class='btn btn-primary'>Ajouter</button>";
                                 echo " </div>";
                             echo " </div>";
                         echo " </div>";
@@ -53,4 +53,4 @@
     </div>
 </section>
 
-<?php require 'footer.php';?>
+<?php require 'public_footer.php';?>
