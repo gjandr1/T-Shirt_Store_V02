@@ -20,8 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bec3b58f-c2db-4629-874d-bab26669472e" name="Default Changelist" comment="t-shirt store v2">
-      <change afterPath="$PROJECT_DIR$/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DATA/T-ShirtStore.vpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DATA/T-ShirtStore.vpp.bak_000f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DATA/T-ShirtStore.vpp.bak_001d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DATA/T-ShirtStore_maquette.epgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DATA/US-Tshirt_Store.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DATA/tshirt-store.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/delete_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/delete_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/insert_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/insert_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/redo_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/redo_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/update_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/update_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_add_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_add_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_liste_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_liste_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_modif_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_modif_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_supprimer_artiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/private/private_supprimer_tshirt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public_main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,7 +94,9 @@
       <workItem from="1623770639608" duration="8545000" />
       <workItem from="1623843113581" duration="22283000" />
       <workItem from="1623941091093" duration="380000" />
-      <workItem from="1623946707100" duration="645000" />
+      <workItem from="1623946707100" duration="5672000" />
+      <workItem from="1623955225163" duration="1668000" />
+      <workItem from="1624460261565" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="t-shirt store v2">
       <created>1623941174058</created>
@@ -76,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623941174058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v3">
+      <created>1623947900063</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623947900063</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,9 +132,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="t-shirt store v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="t-shirt store v2" />
+    <MESSAGE value="v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1624460617326">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864/1920.-121.1920.1200@0.0.1536.864" timestamp="1624460617326" />
     <state x="604" y="352" key="NewPhpFileDialog" timestamp="1623939525456">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
